@@ -1,38 +1,120 @@
 .App {
-  text-align: center;
+  background-color: #999999;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000 !important;
+}
+.signup-main {
+  background-color: #e9f8e5;
+  display: flex;
+  width: 70%;
+  height: 80vh;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 1.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image {
+  height: 85%;
+  width: 50%;
+  margin: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mob-image {
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login {
+  background-color: #fcfeff;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  border-radius: 10px 0px 0 10px;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.login-info {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.info-img {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.img {
+  width: 35px;
+  height: 30px;
+}
+.heading {
+  font-weight: bolder;
+  font-family: "Poppins, sans-serif";
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2px;
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  top: 74%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+.input-box {
+  width: 85%;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  padding-left: 30px;
+}
+.input p {
+  margin: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  align-self: start;
+}
+.button {
+  width: 92%;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #73895d;
+  margin-top: 1rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.img-2 {
+  width: 25px;
+  height: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+@media screen and (max-width: 650px) {
+  .image {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .login {
+    width: 100%;
+  }
+  .signup-main {
+    width: 100%;
+    height: 100vh;
+    box-shadow: none;
+  }
+  .mob-image {
+    display: inline;
+    width: 200px;
+    height: 200px;
   }
 }
